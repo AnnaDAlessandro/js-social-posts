@@ -100,5 +100,7 @@ likeButton.forEach((element, index) => {
     element.addEventListener('click', function (e) {
       e.preventDefault();
       element.classList.toggle('like-button--liked');
+      
+      contatoreButton[index].innerHTML= posts[index].likes+1
     });
   });
