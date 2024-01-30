@@ -91,3 +91,14 @@ posts.forEach((element,index ) =>{
   </div>            
 </div>`
 })
+
+
+const likeButton = document.querySelectorAll('.js-like-button')
+const contatoreButton = document.querySelectorAll('.js-likes-counter')
+
+likeButton.forEach((element, index) => {
+    element.addEventListener('click', function (e) {
+      e.preventDefault();
+      element.classList.toggle('like-button--liked');
+    });
+  });
